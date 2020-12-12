@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Change Calculator</title>
+    <style>
+        body {
+                font-family: Arial, Helvetica, sans-serif;
+                background: #666666;
+             }
+
+        #content {
+            width: 600px;
+            margin: 10px auto;
+            padding: 5px 20px;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            width: 15em;
+            text-align: right;
+            padding-right: 1em;
+            float: left;
+        }
+
+        input {
+            display: block;
+            width: 15em;
+            float: left;
+        }
+
+        br {
+            clear: left;
+        }
+
+        #calculate {
+            width: 6em;
+            margin-left: 1em;
+        }
+        
+        .disabled {
+            color: #000000;
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="content">
+    <h1>Change Calculator</h1>
+
+    <label>Enter number of cents (0-99):</label>
+    <input type="text" id="cents" />
+    <!-- Button to fire click event in js file -->
+    <input type="button" value="Calculate" name="calculate" id="calculate" /><br />
+
+    <p>&nbsp;</p>
+		
+    <label>Quarters:</label>
+    <input type="text" id="quarters" class="disabled" disabled="disabled" /><br />
+					
+    <label>Dimes:</label>
+    <input type="text" id="dimes" class="disabled" disabled="disabled" /><br />
+	
+    <label>Nickels:</label>
+    <input type="text" id="nickels" class="disabled" disabled="disabled" /><br />
+		
+    <label>Pennies:</label>
+    <input type="text" id="pennies" class="disabled" disabled="disabled" /><br />
+					
+    <p>&nbsp;</p>
+
+    <!-- javascript file to load for coin calculations-->
+    <script src="calculate_coins.js"></script>
+
+</div>
+</body>
+</html>

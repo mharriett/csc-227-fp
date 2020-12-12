@@ -1,0 +1,14 @@
+{
+  "name": "cscpk",
+  "version": "1.0.0",
+  "description": "csc 227 final project for dev ops",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Harriett",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
